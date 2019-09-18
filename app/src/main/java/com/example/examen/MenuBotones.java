@@ -30,21 +30,23 @@ public class MenuBotones extends AppCompatActivity implements View.OnClickListen
         findViewById(R.id.btn_salir).setOnClickListener(this);
         findViewById(R.id.btn_camara).setOnClickListener(this);
         findViewById(R.id.btn_gps).setOnClickListener(this);
-        findViewById(R.id.btn_acerca).setOnClickListener(this);
         findViewById(R.id.btn_web).setOnClickListener(this);
         findViewById(R.id.btn_acerca).setOnClickListener(this);
+        findViewById(R.id.btn_calculadora).setOnClickListener(this);
+
+
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_camara:
-               intento = new Intent(this, Camara.class);
-               startActivity(intento);
+                intento = new Intent(this, Camara.class);
+                startActivity(intento);
                 break;
             case R.id.btn_gps:
-              //  intento = new Intent(this, GpsActivity.class);
-               // startActivity(intento);
+                //  intento = new Intent(this, GpsActivity.class);
+                // startActivity(intento);
                 break;
 
             case R.id.btn_acerca:
@@ -55,9 +57,16 @@ public class MenuBotones extends AppCompatActivity implements View.OnClickListen
                 break;
 
             case R.id.btn_web:
-               intento = new Intent(this, MundoWeb.class);
+                intento = new Intent(this, MundoWeb.class);
                 startActivity(intento);
                 break;
+
+            case R.id.btn_calculadora:
+                intento = new Intent(this, Calculadora.class);
+                startActivity(intento);
+                break;
+
+
             case R.id.btn_salir:
                 //intento = new Intent(this, MuestraDatos.class);
 
