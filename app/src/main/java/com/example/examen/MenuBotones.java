@@ -39,23 +39,23 @@ public class MenuBotones extends AppCompatActivity implements View.OnClickListen
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_camara:
-              //  intento = new Intent(this, CamaraActivity.class);
-                startActivity(intento);
+               intento = new Intent(this, Camara.class);
+               startActivity(intento);
                 break;
             case R.id.btn_gps:
               //  intento = new Intent(this, GpsActivity.class);
-                startActivity(intento);
+               // startActivity(intento);
                 break;
 
             case R.id.btn_acerca:
 
                 intento = new Intent(this, AcercaDe.class);
-                 startActivity(intento);
+                // startActivity(intento);
                 ShowPopup();
                 break;
 
             case R.id.btn_web:
-              //  intento = new Intent(this, WebActivity.class);
+               intento = new Intent(this, MundoWeb.class);
                 startActivity(intento);
                 break;
             case R.id.btn_salir:

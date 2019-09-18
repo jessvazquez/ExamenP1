@@ -17,6 +17,8 @@
     <string name="tomarFoto">"Tomar Foto"</string>
     <string name="activarVentana">"Activar ventana POP-UP"</string>
     <string name="calculadora">"Calculadora"</string>
+    <string name="ir">"Ir"</string>
+    <string name="buscar">"Buscar"</string>
 
 
     <string-array name="opciones">
