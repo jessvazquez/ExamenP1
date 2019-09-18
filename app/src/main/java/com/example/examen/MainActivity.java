@@ -10,8 +10,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    EditText ecorreo, econtrasena;
-    String scorreo, scontrasena;
+    EditText eusuario, econtrasena;
+    String susuario, scontrasena;
     Intent obj_i;
 
     String comparaCorreo = "David";
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ecorreo = (EditText) findViewById(R.id.id_correo);
+        eusuario = (EditText) findViewById(R.id.id_usuario);
         econtrasena = (EditText) findViewById(R.id.id_contrasena);
 
         findViewById(R.id.btn_ingresar).setOnClickListener(this);
@@ -33,10 +33,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         obj_i = new Intent(this, MenuBotones.class);
         switch (view.getId()) {
             case R.id.btn_ingresar:
-                scorreo = ecorreo.getText().toString();
+                susuario = eusuario.getText().toString();
                 scontrasena = econtrasena.getText().toString();
-                if (scorreo.equals(comparaCorreo) && scontrasena.equals(comparaContrasena)) {
-                    Toast.makeText(this, "Iniciando sesion...", Toast.LENGTH_SHORT).show();
+                if (susuario.equals(comparaCorreo) && scontrasena.equals(comparaContrasena)) {
+                    Toast.makeText(this, "Bienvenido "+susuario, Toast.LENGTH_SHORT).show();
                     startActivity(obj_i);
 
                 } else {
