@@ -30,11 +30,9 @@ public class MenuBotones extends AppCompatActivity implements View.OnClickListen
         findViewById(R.id.btn_salir).setOnClickListener(this);
         findViewById(R.id.btn_camara).setOnClickListener(this);
         findViewById(R.id.btn_gps).setOnClickListener(this);
-        findViewById(R.id.btn_imagen).setOnClickListener(this);
-        findViewById(R.id.btn_imagenes).setOnClickListener(this);
-        findViewById(R.id.btn_pop).setOnClickListener(this);
-        findViewById(R.id.btn_video).setOnClickListener(this);
+        findViewById(R.id.btn_acerca).setOnClickListener(this);
         findViewById(R.id.btn_web).setOnClickListener(this);
+        findViewById(R.id.btn_acerca).setOnClickListener(this);
     }
 
     @Override
@@ -48,24 +46,14 @@ public class MenuBotones extends AppCompatActivity implements View.OnClickListen
               //  intento = new Intent(this, GpsActivity.class);
                 startActivity(intento);
                 break;
-            case R.id.btn_imagen:
-              //  intento = new Intent(this, BotonImagenActivity.class);
-                startActivity(intento);
-                break;
-            case R.id.btn_imagenes:
-               // intento = new Intent(this, ImagenesActivity.class);
-                startActivity(intento);
-                break;
-            case R.id.btn_pop:
 
-                //intento = new Intent(this, VentanaPopActivity.class);
-                //  startActivity(intento);
+            case R.id.btn_acerca:
+
+                intento = new Intent(this, AcercaDe.class);
+                 startActivity(intento);
                 ShowPopup();
                 break;
-            case R.id.btn_video:
-              //  intento = new Intent(this, VideoActivity.class);
-                startActivity(intento);
-                break;
+
             case R.id.btn_web:
               //  intento = new Intent(this, WebActivity.class);
                 startActivity(intento);
@@ -87,18 +75,18 @@ public class MenuBotones extends AppCompatActivity implements View.OnClickListen
 
 
     public void ShowPopup() {
-//        TextView txtclose;
-//        Button btnFollow;
-//        myDialog.setContentView(R.layout.activity_ventana_pop);
-//        txtclose = (TextView) myDialog.findViewById(R.id.txtclose);
-//        txtclose.setText("M");
-//        txtclose.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                myDialog.dismiss();
-//            }
-//        });
-//        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-//        myDialog.show();
+        TextView txtclose;
+        Button btnFollow;
+        myDialog.setContentView(R.layout.activity_acerca_de);
+        txtclose = (TextView) myDialog.findViewById(R.id.txtclose);
+        txtclose.setText("M");
+        txtclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myDialog.dismiss();
+            }
+        });
+        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        myDialog.show();
     }
 }
