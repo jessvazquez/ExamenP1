@@ -45,8 +45,8 @@ public class MenuBotones extends AppCompatActivity implements View.OnClickListen
                 startActivity(intento);
                 break;
             case R.id.btn_gps:
-                //  intento = new Intent(this, GpsActivity.class);
-                // startActivity(intento);
+                  intento = new Intent(this, Mapas.class);
+                 startActivity(intento);
                 break;
 
             case R.id.btn_acerca:
