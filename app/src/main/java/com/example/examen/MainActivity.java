@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         econtrasena = (EditText) findViewById(R.id.id_contrasena);
 
         findViewById(R.id.btn_ingresar).setOnClickListener(this);
-        findViewById(R.id.btn_limpiar).setOnClickListener(this);
+       // findViewById(R.id.btn_limpiar).setOnClickListener(this);
     }
 
     @Override
